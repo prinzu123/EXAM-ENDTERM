@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="432dp"
+            android:layout_height="179dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logobg" />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="239dp"
+            android:layout_height="207dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/gn" />
+
+        <TextView
+            android:id="@+id/tvone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="★★★★☆ |  166k sold "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/tvTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Price: $469"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvone"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/tvfour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Note: Whole Sale is more than 10"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTwo"
+            app:layout_constraintVertical_bias="0.003" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:padding="20sp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvfour" />
+
+        <TextView
+            android:id="@+id/tvThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Add-On Gem Customization: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumber"
+            app:layout_constraintVertical_bias="0.041" />
+
+
+
+        <CheckBox
+            android:id="@+id/diamond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$2500 Diamond"
+            app:layout_constraintTop_toBottomOf="@+id/tvThree"
+            tools:layout_editor_absoluteX="7dp" />
+
+        <CheckBox
+            android:id="@+id/emerald"
+            android:layout_width="407dp"
+            android:layout_height="41dp"
+            android:text="$1900 Emerald"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diamond" />
+
+        <CheckBox
+            android:id="@+id/ruby"
+            android:layout_width="407dp"
+            android:layout_height="41dp"
+            android:text="$1800 Ruby"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emerald" />
+
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="🛒Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ruby" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
